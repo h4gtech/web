@@ -1,0 +1,255 @@
+*{
+  padding:0;
+  margin: :0;
+  box-sizing: border-box;
+}
+.navbar-brand{
+  font-size:2rem;
+  color:rgba(125, 125, 245, 0.493);
+}
+.navbar-brand:hover{
+  color:rgba(125, 125, 245, 0.493);
+
+
+}
+.nav-link{
+  margin-right:10px;
+  margin-left: 10px;
+  color:rgba(125, 125, 245, 0.493);
+  text-transform: uppercase;
+}
+.nav-link:hover{
+  color:rgba(125, 125, 245, 0.493);
+
+}
+/* Navbar Styling */
+.navbar {
+  background-color: #ffffff;
+  padding: 20px 0;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  position: sticky; /* Sticky positioning */
+  top: 0; /* Stick to top */
+  z-index: 1000; /* Make sure it's on top of other content */
+}
+
+.navbar-brand {
+  font-weight: bold;
+  color: #00a1e0;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler-icon {
+  color: #00a1e0;
+}
+
+.navbar-nav .nav-link {
+  color: #333;
+  margin-right: 20px;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.navbar-nav .nav-link.active {
+  color: #00a1e0;
+}
+
+.navbar-nav .dropdown-menu {
+  background-color: #ffffff;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-item:hover {
+  background-color: #00a1e0;
+  color: #ffffff;
+}
+
+.navbar-nav .nav-link.disabled {
+  color: #aaa;
+}
+
+.navbar-collapse {
+  justify-content: space-between;
+}
+
+/* Search Bar Styling */
+form.d-flex {
+  border: 2px solid #00a1e0;
+  border-radius: 50px;
+  padding: 5px 15px;
+  background-color: #f8f8f8;
+}
+
+input[type="search"] {
+  border: none;
+  outline: none;
+  font-size: 16px;
+  padding: 10px;
+  width: 200px;
+  border-radius: 50px;
+  background-color: transparent;
+}
+
+input[type="search"]::placeholder {
+  color: #aaa;
+}
+
+button[type="submit"] {
+  background-color: #00a1e0;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #008bb5;
+}
+
+/* Top Bar (for orders and WhatsApp info) */
+.top-bar {
+  background-color: #00a1e0;
+  color: white;
+  padding: 5px 20px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.top-bar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.top-bar button.dismiss-btn {
+  background-color: white;
+  border: none;
+  color: #00a1e0;
+  padding: 5px 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 5px;
+}
+
+.top-bar button.dismiss-btn:hover {
+  background-color: #f0f0f0;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .navbar-nav {
+      text-align: center;
+      margin-top: 20px;
+  }
+
+  form.d-flex {
+      width: 100%;
+      margin-top: 10px;
+  }
+}
+.main{
+ background: url(./image/download\ \(1\).jpg)no-repeat;
+ background-size: cover;
+ height: 100vh;
+ background-position: 50% 50%;
+ width: 100%;
+}
+.main h1{
+  font-size:4rem ;
+  font-weight: 700;
+
+}
+.btn1{
+  height: 45px;
+  width:35%;
+  outline: none;
+  background-color: #00a1e0;
+  color: rgb(230, 234, 243);
+  font-weight: 700;
+  border-radius: 60px;
+}
+h1{
+  font-weight: 700;
+}
+/* Card styles */
+
+.card:hover {
+   -webkit-box-shadow: 10px 11px 12px 0px rgba(0,0,0,0.47);
+   -moz-box-shadow: 10px 11px 12px 0px rgba(0,0,0,0.47);
+box-shadow: 10px 11px 12px 0px rgba(0,0,0,0.47);
+  transform: translateY(-10px); /* Slight lift on hover */
+  transition: 0.5em;
+}
+
+.card img {
+  height: 150px; /* Adjust image height */
+  object-fit: contain; /* Keep the image within the boundaries */
+}
+
+.card-body h6 {
+  margin-top: 10px; /* Add space between image and text */
+}
+
+/* Grid adjustments for responsive design */
+@media (max-width: 768px) {
+  .col-md-4 {
+    margin-bottom: 20px; /* Extra space for smaller screens */
+  }
+}
+.swiper-container {
+  width: 80%;
+  max-width: 800px; /* Increased width */
+  height: 500px;/* Increased height */
+  position: relative;
+  overflow: hidden;
+  border-radius: 30px 30px 0 0; /* Curved bottom corners */
+}
+
+.swiper-wrapper {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.swiper-slide {
+  min-width: 100%;
+  height: 300px;
+  width: auto;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-button-prev, .swiper-button-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.swiper-button-prev {
+  left: 10px;
+}
+
+.swiper-button-next {
+  right: 10px;
+}
