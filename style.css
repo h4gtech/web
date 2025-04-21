@@ -1,0 +1,605 @@
+/* General Styles */
+:root {
+    --primary-color: #0d6efd;
+    --secondary-color: #6c757d;
+    --light-color: #f8f9fa;
+    --dark-color: #212529;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--dark-color);
+    overflow-x: hidden;
+}
+
+/* Top Bar */
+.top-bar {
+    font-size: 0.9rem;
+}
+
+/* Navbar */
+.navbar {
+    transition: all 0.3s ease;
+}
+
+.navbar.scrolled {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-weight: 700;
+}
+
+.nav-link {
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+}
+
+/* Hero Slider */
+.hero-slider {
+    margin-top: 1rem;
+}
+
+.carousel-item img {
+    height: 400px;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    bottom: 3rem;
+}
+
+/* Features */
+.feature-item {
+    background-color: white;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.feature-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Category Cards */
+.category-card {
+    transition: all 0.3s ease;
+    border-radius: 0.5rem;
+}
+
+.category-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.category-card img {
+    height:  50 px;
+    object-fit: contain;
+}
+
+/* Compact Product Card */
+/* Force compact product card */
+.product-card {
+    height: 100%; /* Use full height of the column */
+    transition: all 0.3s ease;
+    border-radius: 0.5rem;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.product-card .card-img-top {
+    height: 180px;
+    object-fit: contain;
+    padding: 1rem;
+}
+
+
+.product-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 3px 6px rgba(0,0,0,.1);
+}
+
+/* If using Bootstrap */
+.card-body {
+    padding: 0.25rem !important;
+}
+/* Call to Action */
+.cta {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://via.placeholder.com/1200x400?text=Electronics') no-repeat center center;
+    background-size: cover;
+    padding: 5rem 0;
+}
+
+/* Footer */
+.footer {
+    background-color: var(--dark-color);
+}
+
+.social-icons a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+    background-color: var(--primary-color);
+    transform: translateY(-3px);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .carousel-item img {
+        height: 300px;
+    }
+    
+    .hero-slider {
+        margin-top: 0;
+    }
+    
+    .navbar-collapse {
+        padding-top: 1rem;
+    }
+    
+    .input-group {
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .carousel-item img {
+        height: 200px;
+    }
+    
+    .carousel-caption {
+        bottom: 1rem;
+        padding: 0.5rem;
+    }
+    
+    .carousel-caption h5 {
+        font-size: 1rem;
+    }
+    
+    .carousel-caption p {
+        font-size: 0.8rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .feature-item {
+        margin-bottom: 1rem;
+    }
+    
+    .top-bar .btn {
+        padding: 0.25rem 0.5rem;
+        font-size: 0.8rem;
+    }
+}
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #e0eafc, #cfdef3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 20px 30px rgba(0,0,0,0.2);
+    width: 600px;
+}
+
+.welcome-section {
+    background-color: #4fb3f9;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 20px;
+    color: white;
+    flex: 1;
+}
+
+.welcome-section h1 {
+    margin-bottom: 10px;
+}
+
+.register-button {
+    background-color: white;
+    color: #4fb3f9;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.login-section {
+    padding: 20px;
+    flex: 2;
+}
+
+.login-section h2 {
+    margin-bottom: 20px;
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.forgot-password {
+    display: block;
+    margin: 10px 0;
+    color: #4fb3f9;
+}
+
+.login-button {
+    background-color: #4fb3f9;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+}
+
+.social-button {
+    background-color: #f0f0f0;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 50px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #3498db;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+.login-container {
+    max-width: 400px;
+    margin: auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-container input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+}
+/*login*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  :root {
+    --primary-color: #c6c3c3;
+    --second-color: #ffffff;
+    --black-color: #000000;
+  }
+  
+  body {
+    background-image: url("https://codingstella.com/wp-content/uploads/2024/01/download-6-scaled.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  
+  a {
+    text-decoration: none;
+    color: var(--second-color);
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  .wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  
+  .login_box {
+    position: relative;
+    width: 450px;
+    backdrop-filter: blur(25px);
+    border: 2px solid var(--primary-color);
+    border-radius: 15px;
+    padding: 7.5em 2.5em 4em 2.5em;
+    color: var(--second-color);
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2);
+  }
+  
+  .login-header {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-color);
+    width: 140px;
+    height: 70px;
+    border-radius: 0 0 20px 20px;
+  }
+  
+  .login-header span {
+    font-size: 30px;
+    color: var(--black-color);
+  }
+  
+  .login-header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -30px;
+    width: 30px;
+    height: 30px;
+    border-top-right-radius: 50%;
+    background: transparent;
+    box-shadow: 15px 0 0 0 var(--primary-color);
+  }
+  
+  .login-header::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -30px;
+    width: 30px;
+    height: 30px;
+    border-top-left-radius: 50%;
+    background: transparent;
+    box-shadow: -15px 0 0 0 var(--primary-color); /* Removed space before --primary-color */
+  }
+  
+  .input_box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+  }
+  
+  .input-field {
+    width: 100%;
+    height: 55px;
+    font-size: 16px;
+    background: transparent;
+    color: var(--second-color);
+    padding-inline: 20px 50px;
+    border: 2px solid var(--primary-color);
+    border-radius: 30px;
+    outline: none;
+  }
+  
+  #user {
+    margin-bottom: 10px;
+  }
+  
+  .label {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    transition: 0.2s;
+  }
+  
+  .input-field:focus ~ .label,
+  .input-field:valid .label {
+    /* Added missing closing brace here */
+    position: absolute;
+    top: -10px;
+    left: 20px;
+    font-size: 14px;
+    background-color: var(--primary-color);
+    border-radius: 30px;
+    color: var(--black-color);
+    padding: 0 10px;
+  } /* Closed the missing brace */
+  
+  .icon {
+    position: absolute;
+    top: 18px;
+    right: 25px;
+    font-size: 20px;
+  }
+  
+  .remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+  }
+  
+  .input-submit {
+    width: 100%;
+    height: 50px;
+    background: #ececec;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .input-submit:hover {
+    background: var(--second-color);
+  }
+  
+  .register {
+    text-align: center;
+  }
+  
+  .register a {
+    font-weight: 500;
+  }
+  
+  @media only screen and (max-width: 564px) {
+    .wrapper {
+      padding: 20px;
+    }
+  
+    .login_box {
+      padding: 7.5em 1.5em 4em 1.5em;
+    }
+  }
+  /* product section*/
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: 'Poppins', sans-serif;
+ }
+ 
+ body {
+     background: #f2f2f2;
+     overflow-x: hidden;
+ }
+ 
+ h1 {
+     font-size: 4rem; /* Reduced from 120px */
+     text-align: center;
+     color: rgba(255, 255, 255, 0.7); /* Increased opacity */
+     margin: 2rem 0;
+     font-weight: 700;
+ }
+ 
+ .parallax-section {
+     position: relative;
+     height: 100vh;
+     overflow: hidden;
+ }
+ 
+ .parallax-1, 
+ .parallax-2, 
+ .parallax-3 {
+     position: relative;
+     height: 100vh;
+     background-size: cover;
+     background-position: center;
+     background-attachment: fixed;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+ 
+ .parallax-1 {
+     background: url('img1-optimized.jpg') no-repeat;
+ }
+ 
+ .parallax-2 {
+     background: url('img2-optimized.jpg') no-repeat;
+ }
+ 
+ .parallax-3 {
+     background: url('img3-optimized.jpg') no-repeat;
+ }
+ 
+ .parallax-inner {
+     padding: 5% 0; /* Reduced from 10% */
+     width: 100%;
+     text-align: center;
+ }
+ 
+ h2 {
+     font-size: 1.8rem; /* Reduced from 32px */
+     color: #555;
+     text-align: center;
+     font-weight: 400; /* Slightly bolder */
+     letter-spacing: 1px; /* Reduced from 2px */
+     margin: 1.5rem 0;
+ }
+ 
+ p {
+     font-size: 1rem; /* 16px is okay, but using rem */
+     color: #555;
+     text-align: justify;
+     line-height: 1.6; /* More readable line height */
+     margin: 0 auto 2rem; /* Simplified margins */
+     max-width: 800px;
+     padding: 0 1.5rem;
+ }
+ 
+ /* Responsive adjustments */
+ @media (max-width: 992px) {
+     h1 {
+         font-size: 3rem;
+     }
+     
+     .parallax-inner {
+         padding: 10% 5%;
+     }
+ }
+ 
+ @media (max-width: 768px) {
+     h1 {
+         font-size: 2.5rem;
+     }
+     
+     h2 {
+         font-size: 1.5rem;
+     }
+     
+     .parallax-1,
+     .parallax-2,
+     .parallax-3 {
+         background-attachment: scroll; /* Disable parallax on mobile */
+     }
+ }
+ 
+ @media (max-width: 480px) {
+     h1 {
+         font-size: 2rem;
+     }
+     
+     p {
+         padding: 0 1rem;
+         line-height: 1.5;
+     }
+ }
